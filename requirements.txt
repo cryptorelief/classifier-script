@@ -1,0 +1,5 @@
+sqlalchemy
+psycopg2-binary
+psycopg-postgis
+geoalchemy2
+requests
