@@ -34,7 +34,7 @@ def get_raw(last_id):
 def transform(raw_data):
     transformed_data = []
     for data in raw_data:
-        new_dict = {'metadata':{},'text':data['content']}
+        new_dict = {'metadata':[],'text':data['content']}
         transformed_data.append(new_dict)
         del new_dict
         pass
