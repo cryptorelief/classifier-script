@@ -52,6 +52,8 @@ def get_supplies_and_demands(classified_data, raw_data):
     demand_data = []
     for data in classified_data:
         new_dict = {'source':'nlp',
+                    'tg_user_id':raw_data['userid'],
+                    'group_handle':raw_data['groupid'],
                     'phone':" ".join(data['phone']),
                     'resource_raw':" ".join(data['resource']),
                     'location_raw':" ".join(data['location']),
